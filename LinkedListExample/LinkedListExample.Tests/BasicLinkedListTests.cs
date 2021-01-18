@@ -32,6 +32,31 @@ namespace LinkedListExample.Tests
             ill.Append(7);
             ill.Append(9);
             Assert.AreEqual("{5, 7, 9}", ill.ToString());
+
+        }
+
+        [TestMethod]
+
+        public void TestRemoveFromList()
+        {
+            var ill = new IntegerLinkedList(5);
+            ill.Append(4);
+            ill.Append(3);
+            bool state
+            if (ill.Contains(3)) // doesn't work though
+            {
+                state = true;
+                ill.Remove(3);
+            }
+            else
+            {
+                state = false;
+            }
+        }
+
+        public void RemoveDuplicates()
+        {
+
         }
 
     }
